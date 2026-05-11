@@ -1,0 +1,104 @@
+header {
+    background-color: hsl(var(--background) / .8);
+    border-color: hsl(var(--border) / .6);
+    border-bottom-width: 1px;
+    width: 100%;
+    z-index: 40;
+    top: 0;
+    position: sticky;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: inherit;
+    text-decoration: inherit;
+    border-color: hsl(var(--border));
+    cursor: pointer;
+}
+
+.container-logo-img {
+    display: flex;
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-glow);
+    background-image: var(--gradient-hero);
+    border-radius: .75rem;
+    justify-content: center;
+    align-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    position: relative;
+}
+
+.container-logo-img svg {
+    color: hsl(var(--primary-foreground));
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+}
+
+.container-logo-name {
+    letter-spacing: -.025rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.container-navegacao {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.container-navegacao-button {
+    transition: var(--transition-smooth);
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: 0 .75rem;
+    border-radius: 9999px;
+    white-space: nowrap;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    height: 2.25rem;
+    display: inline-flex;
+    cursor: pointer;
+    background-color: transparent;   
+    border: none;
+}
+
+.count {
+    color: hsl(var(--secondary-foreground));
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 1rem;
+    padding: .125rem 0;
+    background-color: hsl(var(--secondary));
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 9999%;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    display: inline-flex;
+    margin-left: .25rem;
+}
+
