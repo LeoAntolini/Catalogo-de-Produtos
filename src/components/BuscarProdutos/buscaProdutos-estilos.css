@@ -1,0 +1,128 @@
+.section-buscar-produtos {
+    padding: 3.5rem 1.5rem;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-input {
+    max-width: 42rem;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.container-input svg {
+    stroke: hsl(var(--muted-foreground));
+    left: 1rem;
+    position: absolute;
+}
+
+.container-input input {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-card);
+    --tw-ring-offset-color: hsl(var(--background));
+    --tw-shadow-color: hsl(var(--card));
+    --tw-shadow: var(--tw-shadow-colored);
+    padding: .5rem 3rem;
+    background-color: hsl(var(--card));
+    border-width: 1px;
+    border-radius: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    text-rendering: auto;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: auto;
+    cursor: text;
+    -webkit-rtl-ordering: logical;
+    border-image: initial;
+    border: none;
+    color: #FFF;
+}
+
+.container-input input:focus {
+    border: 2px solid hsl(var(--primary) / .5);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.resgistro {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+    align-items: center;
+    flex-direction: row;
+    gap: .75rem;
+    justify-content: space-between;
+    max-width: 64rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-filtros {
+    gap: .75rem;
+    flex: 1 1 0%;
+    display: flex;
+}
+
+.container-filtros .btn-dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 220px;
+    height: 2.75rem;
+    padding: .5rem .75rem;
+    font-size: .875rem;
+    background-color: hsl(var(--card));
+    border-color: hsl(var(--border) / .8);
+    border-radius: .75rem;
+    cursor: pointer;
+}
+
+.container-filtros ul {
+    min-width: 220px;
+    background-color: hsl(var(--card));;
+    border-color: hsl(var(--border) / .8);
+}
+
+.container-filtros ul .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #FFF;
+    font-size: .875rem;
+    border-radius: .5rem;
+}
+
+.container-filtros ul .dropdown-item:hover {
+    color: hsl(var(--accent-foreground));
+    background-color: hsl(var(--accent));
+    transition: var(--transition-smooth);
+    stroke: hsl(var(--accent-foreground));
+}
+
+p {
+    color: hsl(var(--muted-foreground));
+    font-size: .875rem;
+    line-height: 1.25rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+
+    unicode-bidi: isolate;
+}
+
+p .qt-produtos {
+    color: #FFF;
+    font-weight: 600;
+    padding-right: .25rem;
+}

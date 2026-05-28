@@ -1,0 +1,5 @@
+.body {
+    background-color: hsl(var(--background));
+    border-color: hsl(var(--border));
+    color: hsl(var(--secondary-foreground));
+}
