@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #111827;
+  --secondary-color: #1f2937;
+  --accent-color: #6366f1;
+  --text-color: #f9fafb;
+  --gray-color: #9ca3af;
+  --background-color: #f3f4f6;
+
+  --border-radius: 16px;
+
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,101 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    background-color: hsl(var(--background) / .8);
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+.container-svg {
+    transition: all .3s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0 0 60px hsl(262 90% 60% / .4);
+    background-image: linear-gradient(135deg, hsl(262 90% 55%) 0%, hsl(280 80% 50%) 50%, hsl(220 80% 50%) 100%);
+    border-radius: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    position: relative;
+    stroke: hsl(var(--secondary-foreground));
+}
+
+header a:hover .container-svg {
+    transform: translateY(-2px) scale(1.03);
+}
+
+header a span {
+    letter-spacing: -.025em;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+header nav button {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    height: 2.25rem;
+    padding: 0 .75rem;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    stroke: hsl(var(--secondary-foreground));
+    background-color:   inherit;
+    border-color: hsl(var(--border));
+    color: hsl(var(--secondary-foreground));
+}
+
+header nav button:not(.ativo):hover {
+    color: hsl(var(--accent-foreground));
+    background-color: hsl(var(--accent));
+    transition: var(--transition-smooth);
+    stroke: hsl(var(--accent-foreground));
+}
+
+.ativo {
+    background: hsl(var(--primary));
+}
+
+header nav button span {
+    font-size: .875rem;
+    font-weight: 500;
+    background-color: transparent;
+    color: inherit;
+}
+
+header nav button div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.25rem;
+    min-width: 1.25rem;
+    margin-left: .25rem;
+    font-size: .75rem;
+    font-weight: 600;
+    padding: .125rem 0;
+    background-color: hsl(var(--secondary));
+    border-radius: 100%;
+}

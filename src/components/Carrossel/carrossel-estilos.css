@@ -1,0 +1,10 @@
+.carousel-indicators, .posicao, h5, p, span {
+    background-color: transparent;
+}
+
+.posicao {
+    top: 35%;
+    left: 50%;
+    width: 55%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,10 @@
+.body {
+    background-color: hsl(var(--background));
+    border-color: hsl(var(--border));
+    color: hsl(var(--secondary-foreground));
+}
+
+.botao-favoritos.ativo {
+    transform: scale(1.1);
+    stroke: #EF4444;
+}
