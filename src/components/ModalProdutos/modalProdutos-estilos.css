@@ -169,6 +169,15 @@ h2 {
     stroke: white;
 }
 
+.botao-favoritar.ativo {
+    transform: scale(1.1);
+    stroke: #EF4444;
+}
+
+.botao-favoritar.ativo:hover {
+    stroke: #EF4444;
+}
+
 .botao-favoritar:hover {
     background-color: hsl(var(--accent));
     stroke: hsl(var(--accent-foreground));

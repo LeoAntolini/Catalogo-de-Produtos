@@ -103,7 +103,7 @@
     border-radius: .5rem;
 }
 
-.container-filtros ul .dropdown-item:hover {
+.container-filtros ul .dropdown-item:hover, .active-item{
     color: hsl(var(--accent-foreground));
     background-color: hsl(var(--accent));
     transition: var(--transition-smooth);

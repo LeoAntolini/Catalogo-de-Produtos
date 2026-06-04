@@ -7,6 +7,10 @@ header {
     margin: 0 auto;
     padding: 0 1.5rem;
     background-color: hsl(var(--background) / .8);
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 header a {
@@ -59,16 +63,20 @@ header nav button {
     border: none;
     cursor: pointer;
     stroke: hsl(var(--secondary-foreground));
-    background-color: hsl(var(--background));
+    background-color:   inherit;
     border-color: hsl(var(--border));
     color: hsl(var(--secondary-foreground));
 }
 
-header nav button:hover {
+header nav button:not(.ativo):hover {
     color: hsl(var(--accent-foreground));
     background-color: hsl(var(--accent));
     transition: var(--transition-smooth);
     stroke: hsl(var(--accent-foreground));
+}
+
+.ativo {
+    background: hsl(var(--primary));
 }
 
 header nav button span {

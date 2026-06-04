@@ -4,18 +4,24 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Header from './components/Header'
 import Carrossel from './components/Carrossel'
 import Produtos from './components/Produtos'
-import BuscarProdutos from './components/BuscarProdutos'
 import OffCanvaCarrinho from './components/OffCanvaCarrinho'
+import { useState } from 'react'
 
 
 function App() {
+  const [showFavorites, setShowFavorites] =
+    useState(false)
 
   return (
     <div className='body'>
-      <Header />
+      <Header
+          showFavorites={showFavorites}
+          setShowFavorites={setShowFavorites}
+      />
       <Carrossel />
-      <BuscarProdutos />
-      <Produtos />
+      <Produtos 
+        showFavorites={showFavorites}
+      />
       <OffCanvaCarrinho />
     </div>
   )
