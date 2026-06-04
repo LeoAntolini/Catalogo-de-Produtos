@@ -13,40 +13,31 @@ function Carrossel() {
                         aria-label="Diapositivo 3"></button>
                 </div>
                 <div className="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="w-100 img-fluid d-md-none" src="./public/assets/Mobile/Banner 1 - Mobile.png"
-                            alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás" />
-                        <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="./public/assets/Tablet/Banner 1 - Tablet.png"
-                            alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás" />
-                        <img class="w-100 img-fluid d-none d-xl-block" src="./public/assets/Desktop/Banner 1 - Desktop.png"
-                            alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás" />
-                        <div class="carousel-caption position-absolute posicao">
-                            <h5 class="fs-1">ESSÊNCIAS QUE MARCAM MOMENTOS</h5>
-                            <p class="fs-4">Descubra fragrâncias sofisticadas que combinam elegância, personalidade e presença em cada detalhe.</p>
+                    <div className="carousel-item active">
+                        <img className="w-100 img-fluid d-md-none" src="/assets/Mobile/banner1-mobile.png"/>
+                        <img className="w-100 img-fluid d-none d-md-block d-xl-none" src="/assets/Tablet/banner1-tablet.png"/>
+                        <img className="w-100 img-fluid d-none d-xl-block" src="/assets/Desktop/banner1-desktop.png"/>
+                        <div className="carousel-caption position-absolute posicao">
+                            <h5 className="fs-1">ESSÊNCIAS QUE MARCAM MOMENTOS</h5>
+                            <p className="fs-4">Descubra fragrâncias sofisticadas que combinam elegância, personalidade e presença em cada detalhe.</p>
                         </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img class="w-100 img-fluid d-md-none" src="./public/assets/Mobile/Banner 2 - Mobile.png"
-                            alt="Modelo feminina utilizando óculos escuros e vestindo conjunto esportivo de blusa e calça na cor preta, sentada em um sofá preto em um fundo rosa." />
-                        <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="./public/assets/Tablet/Banner 2 - Tablet.png"
-                            alt="Modelo feminina utilizando óculos escuros e vestindo conjunto esportivo de blusa e calça na cor preta, sentada em um sofá preto em um fundo rosa." />
-                        <img class="w-100 img-fluid d-none d-xl-block" src="./public/assets/Desktop/Banner 2 - Desktop.png"
-                            alt="Modelo feminina utilizando óculos escuros e vestindo conjunto esportivo de blusa e calça na cor preta, sentada em um sofá preto em um fundo rosa." />
-                        <div class="carousel-caption position-absolute posicao">
-                            <h5 class="fs-1">BELEZA QUE REALÇA SUA ESSÊNCIA</h5>
-                            <p class="fs-4">Produtos criados para destacar sua beleza natural com qualidade, estilo e confiança todos os dias.</p>
+                    <div className="carousel-item position-relative">
+                        <img className="w-100 img-fluid d-md-none" src="/assets/Mobile/banner2-mobile.png"/>
+                        <img className="w-100 img-fluid d-none d-md-block d-xl-none" src="/assets/Tablet/banner2-tablet.png"/>
+                        <img className="w-100 img-fluid d-none d-xl-block" src="/assets/Desktop/banner2-desktop.png"/>
+                        <div className="carousel-caption position-absolute posicao">
+                            <h5 className="fs-1">BELEZA QUE REALÇA SUA ESSÊNCIA</h5>
+                            <p className="fs-4">Produtos criados para destacar sua beleza natural com qualidade, estilo e confiança todos os dias.</p>
                         </div>
                     </div>
-                    <div class="carousel-item position-relative">
-                        <img class="w-100 img-fluid d-md-none" src="./public/assets/Mobile/Banner 3 - Mobile.png"
-                            alt="Modelo masculino utilizando oculos de cor preta, vestindo um conjunto de esporte fino da cor cinza em um fundo laranja" />
-                        <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="./public/assets/Tablet/Banner 3 - Tablet.png"
-                            alt="Modelo masculino utilizando oculos de cor preta, vestindo um conjunto de esporte fino da cor cinza em um fundo laranja" />
-                        <img class="w-100 img-fluid d-none d-xl-block" src="./public/assets/Desktop/Banner 3 - Desktop.png"
-                            alt="Modelo masculino utilizando oculos de cor preta, vestindo um conjunto de esporte fino da cor cinza em um fundo laranja" />
-                        <div class="carousel-caption position-absolute posicao">
-                            <h5 class="fs-1">CONFORTO E DESIGN PARA SEU ESPAÇO</h5>
-                            <p class="fs-4">Móveis modernos e funcionais que transformam ambientes com sofisticação e praticidade.</p>
+                    <div className="carousel-item position-relative">
+                        <img className="w-100 img-fluid d-md-none" src="/assets/Mobile/banner3-mobile.png"/>
+                        <img className="w-100 img-fluid d-none d-md-block d-xl-none" src="/assets/Tablet/banner3-tablet.png"/>
+                        <img className="w-100 img-fluid d-none d-xl-block" src="/assets/Desktop/banner3-desktop.png"/>
+                        <div className="carousel-caption position-absolute posicao">
+                            <h5 className="fs-1">CONFORTO E DESIGN PARA SEU ESPAÇO</h5>
+                            <p className="fs-4">Móveis modernos e funcionais que transformam ambientes com sofisticação e praticidade.</p>
                         </div>
                     </div>
 
