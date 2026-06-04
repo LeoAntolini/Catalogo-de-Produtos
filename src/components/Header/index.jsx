@@ -78,7 +78,9 @@ function Header({ showFavorites, setShowFavorites}) {
                 <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shopping-bag h-4 w-4"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
                     <span>Carrinho</span>
-                    <div>{cartItems.length}</div>
+                    {cartItems.length > 0 && (
+                        <div>{cartItems.length}</div>
+                    )}
                 </button>
             </nav>
         </header>
