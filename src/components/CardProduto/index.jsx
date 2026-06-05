@@ -2,6 +2,7 @@ import './card-estilos.css'
 import { useContext, useState } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { FavoriteContext } from '../../context/FavoriteContext'
+import toast from "react-hot-toast";
 
 function CardProduto({ produto, abrirModal }) {
 
@@ -82,7 +83,10 @@ function CardProduto({ produto, abrirModal }) {
                         >
                             Ver
                         </button>
-                        <button aria-label="Adicionar ao carrinho" className="botao-adicionarAoCarrinho" onClick={() => addToCart(produto)}>
+                        <button aria-label="Adicionar ao carrinho" className="botao-adicionarAoCarrinho" onClick={() => {
+                            addToCart(produto)
+                            toast.success("Produto adicionado com sucesso!")
+                        }}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-plus h-4 w-4"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
                         </button>
                     </div>

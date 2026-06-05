@@ -74,6 +74,10 @@ export function CartProvider({ children }) {
         setCartItems(updatedCart)
     }
 
+    function clearCart() {
+        setCartItems([])
+    }
+
     const totalPrice = cartItems.reduce(
         (total, item) =>
             total + item.price * item.quantity,
@@ -87,6 +91,7 @@ export function CartProvider({ children }) {
             removeFromCart,
             increaseQuantity,
             decreaseQuantity,
+            clearCart,
             totalPrice
         }}>
             {children}
