@@ -4,6 +4,7 @@ import { CartContext } from '../../context/CartContext'
 import {
     FavoriteContext
 } from '../../context/FavoriteContext'
+import toast from "react-hot-toast";
 
 function ModalProdutos({ produto, show, fecharModal }) {
 
@@ -64,7 +65,11 @@ function ModalProdutos({ produto, show, fecharModal }) {
                             <div className="interacao-modal">
                                 <button 
                                     className="botao-addCarrinho"
-                                    onClick={() => addToCart(produto)}      
+                                    onClick={() =>{ 
+                                        addToCart(produto)
+                                        toast.success("Produto adicionado com sucesso!")
+                                    }} 
+                                    data-bs-dismiss="modal" aria-label="Close"     
                                 >
                                     Adicionar ao carrinho
                                 </button>

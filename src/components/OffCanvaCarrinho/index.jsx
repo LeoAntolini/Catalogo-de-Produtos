@@ -1,6 +1,7 @@
 import './offCanvaCarrinho-estilos.css';
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
+import toast from "react-hot-toast";
 
 function OffCanvaCarrinho() {
 
@@ -9,6 +10,7 @@ function OffCanvaCarrinho() {
         removeFromCart,
         increaseQuantity,
         decreaseQuantity,
+        clearCart,
         totalPrice
     } = useContext(CartContext)
 
@@ -92,7 +94,18 @@ function OffCanvaCarrinho() {
                                 <span className='fw-semibold fs-5'>Total:</span> 
                                 <span className='fw-bold fs-4'>${totalPrice.toFixed(2)}</span>
                             </div>   
-                            <button className='container-button-finalizar-carrinho'>Finalizar Compra</button>     
+                            <button 
+                                className='container-button-finalizar-carrinho'
+                                onClick={
+                                    () => {
+                                        clearCart()
+                                        toast.success("Compra Finalizada com sucesso!")
+                                    }
+                                }
+                                data-bs-dismiss="offcanvas" aria-label="Close"
+                            >
+                                Finalizar Compra
+                            </button>     
                         </div>
                     </>
                 )}
