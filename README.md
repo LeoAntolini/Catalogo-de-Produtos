@@ -271,8 +271,6 @@ Nome e RA:
 
 Leonardo Antolini de Oliveira             RA: 824125434  
 
-Marcos Vinicius Silveira da Silva         RA: 824123862 
-
 Matheus Rodrigues de Souza                RA: 824140934
 
 
