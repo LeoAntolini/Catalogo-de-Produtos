@@ -271,8 +271,7 @@ Nome e RA:
 
 Leonardo Antolini de Oliveira             RA: 824125434  
 
-Matheus Rodrigues de Souza                RA: 824140934
-
+Marcos Vinicius Silveira da Silva         RA: 824123862 
 
 Curso: Ciência da Computação
 
